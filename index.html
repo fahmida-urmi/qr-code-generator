@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script> <!-- Corrected Library -->
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
+    <div class="text-center mb-6">
+      <h2 class="text-2xl font-semibold text-gray-700">QR Code Generator</h2>
+      <p class="text-gray-500">Enter the text to generate a QR code</p>
+    </div>
+
+    <!-- Input for QR Code Data -->
+    <input type="text" id="qrText" class="w-full p-2 border border-gray-300 rounded-md mb-4" placeholder="Enter text or URL">
+
+    <!-- QR Code Display -->
+    <div id="qrCodeContainer" class="flex justify-center mb-6 hidden"></div>
+
+    <!-- Generate Button -->
+    <div class="text-center">
+      <button id="generateBtn" class="bg-blue-500 text-white px-6 py-2 rounded-md">Generate QR Code</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
